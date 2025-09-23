@@ -130,5 +130,10 @@ module ram_tb();
     rd_enb = 1'b0;
     #100 $finish;
   end
+
+ initial begin
+  $dumpfile("dump.vcd");
+  $dumpvars(0,ram_tb);
+ end
 	
 endmodule
