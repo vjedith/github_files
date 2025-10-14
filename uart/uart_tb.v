@@ -1,5 +1,3 @@
-// Code your testbench here
-// or browse Examples
 module uart_tb;
 reg clk = 0,rst = 0;
 reg rx = 1;
@@ -10,7 +8,7 @@ wire [7:0] doutrx;
 wire donetx;
 wire donerx;
  
-uarttop #(1000000, 9600) dut (clk, rst, rx, dintx, newd, tx, doutrx, donetx, donerx);
+uart_top #(1000000, 9600) dut (clk, rst, rx, dintx, newd, tx, doutrx, donetx, donerx);
   
 always #5 clk = ~clk;  
  
@@ -29,11 +27,11 @@ newd = 1;
 dintx = $urandom();
  
 wait(tx == 0);
-  @(posedge dut.utx.u_clk);
+@(posedge dut.utx.uclk);
  
 for(int j = 0; j < 8; j++)
 begin
-  @(posedge dut.utx.u_clk);
+@(posedge dut.utx.uclk);
 tx_data = {tx,tx_data[7:1]};
 end
  
@@ -47,11 +45,11 @@ rst = 0;
 newd = 0;
  
 rx = 1'b0;
-  @(posedge dut.utx.u_clk);
+@(posedge dut.utx.uclk);
  
 for(int j = 0; j < 8; j++)
 begin
-  @(posedge dut.utx.u_clk);
+@(posedge dut.utx.uclk);
 rx = $urandom;
 rx_data = {rx, rx_data[7:1]};
 end
@@ -59,14 +57,9 @@ end
 @(posedge donerx);
  
 end
-  
-  $finish();
+ 
  
 end
  
-  initial begin
-    $dumpfile("dump.vcd");
-    $dumpvars(0,uart_tb);
-  end
  
 endmodule
