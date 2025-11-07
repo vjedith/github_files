@@ -61,5 +61,9 @@ end
  
 end
  
+initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars(0,uart_tb);
+  end
  
 endmodule
