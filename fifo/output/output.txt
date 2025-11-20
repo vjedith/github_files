@@ -1,0 +1,70 @@
+# KERNEL: [DRV] : DUT Reset Done
+# KERNEL: ------------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 1
+# KERNEL: [DRV] : DATA WRITE  data : 2
+# KERNEL: [MON] : Wr:1 | rd:0 | din:2 | dout:0 | full:0 |  empty:1
+# KERNEL: [MON] : Wr:1 | rd:0 | din:2 | dout:0 | full:0 |  empty:1
+# KERNEL: [SCO] : DATA STORED IN QUEUE :2
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 2
+# KERNEL: [DRV] : DATA WRITE  data : 7
+# KERNEL: [MON] : Wr:1 | rd:0 | din:7 | dout:0 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:1 | rd:0 | din:7 | dout:0 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :7
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 3
+# KERNEL: [DRV] : DATA WRITE  data : 9
+# KERNEL: [MON] : Wr:1 | rd:0 | din:9 | dout:0 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:1 | rd:0 | din:9 | dout:0 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :9
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 4
+# KERNEL: [DRV] : DATA WRITE  data : 7
+# KERNEL: [MON] : Wr:1 | rd:0 | din:7 | dout:0 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:1 | rd:0 | din:7 | dout:0 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :7
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 5
+# KERNEL: [DRV] : DATA WRITE  data : 2
+# KERNEL: [MON] : Wr:1 | rd:0 | din:2 | dout:0 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:1 | rd:0 | din:2 | dout:0 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :2
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 0 iteration : 6
+# KERNEL: [DRV] : DATA READ
+# KERNEL: [MON] : Wr:0 | rd:1 | din:2 | dout:2 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:0 | rd:1 | din:2 | dout:2 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA MATCH
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 0 iteration : 7
+# KERNEL: [DRV] : DATA READ
+# KERNEL: [MON] : Wr:0 | rd:1 | din:2 | dout:7 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:0 | rd:1 | din:2 | dout:7 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA MATCH
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 0 iteration : 8
+# KERNEL: [DRV] : DATA READ
+# KERNEL: [MON] : Wr:0 | rd:1 | din:2 | dout:9 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:0 | rd:1 | din:2 | dout:9 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA MATCH
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 9
+# KERNEL: [DRV] : DATA WRITE  data : 10
+# KERNEL: [MON] : Wr:1 | rd:0 | din:10 | dout:9 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:1 | rd:0 | din:10 | dout:9 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :10
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 0 iteration : 10
+# KERNEL: [DRV] : DATA READ
+# KERNEL: [MON] : Wr:0 | rd:1 | din:10 | dout:7 | full:0 |  empty:0
+# KERNEL: [MON] : Wr:0 | rd:1 | din:10 | dout:7 | full:0 |  empty:0
+# KERNEL: [SCO] : DATA MATCH
+# KERNEL: --------------------------------------
+# KERNEL: ---------------------------------------------
+# KERNEL: Error Count :0
+# KERNEL: ---------------------------------------------
+# RUNTIME: Info: RUNTIME_0068 testbench.sv (238): $finish called.
+# KERNEL: Time: 690 ns,  Iteration: 1,  Instance: /tb,  Process: @INITIAL#273_2@.
+# KERNEL: stopped at time: 690 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
